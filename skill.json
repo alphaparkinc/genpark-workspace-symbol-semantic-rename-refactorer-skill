@@ -1,0 +1,42 @@
+{
+  "name": "genpark-workspace-symbol-semantic-rename-refactorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Multi-file code workspace symbol AST reference resolver and atomic semantic rename refactorer.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "code-synthesis",
+  "tags": [
+    "cursor-composer",
+    "windsurf-cascade",
+    "ast-refactor",
+    "symbol-rename",
+    "codebase-intelligence"
+  ],
+  "inputs": {
+    "workspace_files": {
+      "type": "object"
+    },
+    "old_symbol": {
+      "type": "string"
+    },
+    "new_symbol": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "refactor_job_id": {
+      "type": "string"
+    },
+    "files_modified_count": {
+      "type": "integer"
+    },
+    "atomic_diff_manifest": {
+      "type": "array"
+    },
+    "refactor_patch_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
